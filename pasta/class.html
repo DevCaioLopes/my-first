@@ -1,0 +1,20 @@
+<script>
+    var classificacao=[];
+    var filmes=["Enrolados", "A princesa e o sapo", "Frozen", "Moana"];
+    function Classificacao(){
+        alert("Informe uma classificacao de 1 a 5 estrelas para cada filme");
+        for(contador=0;contador<filmes.length;contador++){
+            classificacao[contador]=prompt("Informe a quantidade de estrelas para o filme "+filmes[contador]);
+        }
+    }
+    function ExibirClassificacoes(){
+        var numEstrelas="";
+        for(contador=0;contador<filmes.length;contador++){
+            numEstrelas="";
+            for(contadorEstrelas=1;contadorEstrelas<=classificacao[contador];contadorEstrelas++){
+                numEstrelas +"";
+            }
+        console.log(filmes[contador]+""+numEstrelas+" estrelas");
+        }
+    }
+</script>
